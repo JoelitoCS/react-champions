@@ -8,7 +8,7 @@ function App() {
   const [equipos, setEquipos] = useState([])
 
   async function leerEquipos() {
-    const ruta = "http://localhost:3000/api/equipos"
+    const ruta = "https://api-champions-1.onrender.com/api/equipos"
     const equiposJson = await fetch (ruta)
     const equipos = await equiposJson.json()
     setEquipos(equipos)
